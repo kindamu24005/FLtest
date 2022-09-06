@@ -119,7 +119,7 @@ if __name__ == '__main__':
         net.train(True)
 
         for i, (data, target) in enumerate(loaders['train']):
-            data = data.view(-1, 28 * 28)
+            #data = data.view(-1, 28 * 28)
             optimizer.zero_grad()
             output = net(data)
             loss = f.nll_loss(output, target)
@@ -138,7 +138,7 @@ if __name__ == '__main__':
 
         with torch.no_grad():
             for data, target in loaders['test']:
-                data = data.view(-1, 28 * 28)
+                #data = data.view(-1, 28 * 28)
                 output = net(data)
                 test_loss += f.nll_loss(output, target, reduction='sum').item()
                 pred = output.argmax(dim=1, keepdim=True)
