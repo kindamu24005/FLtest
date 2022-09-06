@@ -77,7 +77,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # Number of times of learning
-    epoch = 150
+    epoch = 300
 
     # For saving learning results
     history = {
@@ -96,7 +96,7 @@ if __name__ == '__main__':
     stadle_client = BasicClient(config_file=client_config_path, agent_name=args.agent_name, reg_port=args.reg_port)
     stadle_client.set_bm_obj(net)
 
-    for e in range(epoch):
+    for e in range(300):
 
         if (e % 2 == 0): # Set how many epochs the aggregation is executed
             # Don't send model at beginning of training

@@ -4,7 +4,7 @@
     "semi_global_model_file_name": "sgms.binaryfile",
     "state_file_name": "state",
     "aggr_ip": "52.8.109.30",
-    "reg_port": "8958",
+    "reg_port": "8970",
     "init_weights_flag": 1,
     "token": "stadle12345",
     "simulation": "False",
