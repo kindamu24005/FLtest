@@ -12,7 +12,7 @@ from stadle import BasicClient
 import argparse
 
 def load_CIFAR100(batch=128, intensity=1.0, classes=None, sel_prob=1.0, def_prob=0.1):
-    trainset_size = 60000
+    trainset_size = 50000
 
     # Set the dataset mask to perform training with biased data
     if (args.classes is not None):
